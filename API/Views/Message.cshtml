@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>SİGORTADEFTERİM.com İletişim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="~/assets/images/icon.png">
+
+    <link rel="stylesheet" type="text/css" href="~/assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="~/assets//fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="~/assets//css/animate.css">
+
+    <link rel="stylesheet" type="text/css" href="~/assets//css/hamburgers.min.css">
+
+    <link rel="stylesheet" type="text/css" href="~/assets//css/select2.min.css">
+
+    <link rel="stylesheet" type="text/css" href="~/assets//css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/assets//css/main.css">
+    <link rel="stylesheet" type="text/css" href="~/assets//css/custom.css">
+
+</head>
+<body>
+    <div class="loader" style="display: none;">
+        <div>
+            <div class="spinner-border text-info" style=""></div>
+        </div>
+    </div>
+    <div class="bg-contact2" style="display:none;">
+
+        <div class="container mobil_container" style="padding-bottom: 30px;">
+            <div class="row cizgi_header mobil_header" style="margin: 10px;text-align: center;display:none">
+                <div class="col-12 img_logo">
+                </div>
+                <div class="col-12 lbl_header">
+                    <label>Acente Mesaj Paneli</label>
+                </div>
+            </div>
+            <div class="row cizgi_header normal_header" style="margin: 10px;">
+                <div class="col-6 img_logo">
+                </div>
+                <div class="col-6 lbl_header">
+                    <label>Acente Mesaj Paneli</label>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 7em;">
+                <div class="col-6 testdiv">
+                    <div class="col-12 lbl_baslik">
+                        Müşteri Bilgisi
+                    </div><div class="col-12 mobil_cizgi_musteri"></div>
+                    <div class="col-12 lbl_adsoyad">Ad Soyad:</div>
+                    <div class="col-12 username"></div>
+                </div><div class="col-6" style="">
+                    <div class="col-12 lbl_baslik">
+                        Poliçe Bilgisi
+                    </div>
+                    <div class="mobil_cizgi_talepno"></div>
+
+                    <div class="mobil_cizgi_policeno"></div>
+                    <div class="mobil_cizgi_urun"></div>
+                    <div class="mobil_cizgi_urunaciklama"></div>
+                    <div class="col-12 lbl_talepno">Talep No:</div>
+                    <div class="col-12 talepno username"></div>
+
+                    <div class="col-12 lbl_police">Poliçe No:</div>
+                    <div class="col-12 policenumarasi username"></div>
+                    <div class="col-12 lbl_police">Ürün:</div>
+                    <div class="col-12 bransAdi username"></div>
+                    <div class="col-12 urun_tur lbl_police">Meslek</div>
+                    <div class="col-12 urun_aciklama username"></div>
+                </div>
+            </div>
+            <div class="row" style="margin: 30px 10px 0px 10px;background-color: #0438bf;">
+                <div class="col-12">
+                    <div class="user_message div_user_message" id="div_user_message" style="overflow-y: scroll;max-height: 250px;/* padding-bottom: 15px; */">
+
+                    </div>
+                </div>
+
+            </div><div class="row" style="margin: 30px 10px 0px 10px;">
+                <div class="col-12" style="background-color: #0438bf;">
+                    <textarea name="message" class="textarea_message" placeholder="Mesajınızı yazınız" style="height: 250px;"></textarea>
+                </div>
+            </div><div class="row" style="margin: 20px 10px 0px 10px;">
+                <div class="col-12">
+                    <label style="font-size: 16px;color: white;">Maksimum 5 adet dosyayı aynı anda seçerek yükleyebilirsiniz.</label><label style="font-size: 16px; display: none; color: white;" id="lbl_reselect" class="lbl_reselect">Dosyaları yeniden seçmek için tekrar "Teklif Ekle" butonuna tıklayınız.</label>
+                </div>
+            </div>
+            <div class="row" style="margin: 0px 10px 0px 10px;">
+                <div class="col-6 normal_teklifekle" style="text-align: left;">
+                    <div class="row">
+                        <div class="col-2 fileUploadTrigger1">
+                        </div>
+                        <div class="col-10" style=" margin: auto;">
+                            <div class="col-12" style=" padding: 0px;">
+
+                                <h4 class="lbl_teklifekle">
+                                    TEKLİF EKLE
+                                </h4>
+                                <p class="file_context" style="display: none;">
+                                    <label style="font-size: 13px; margin-bottom: 0px !important;">Eklenen Dosya Sayısı : </label><label class="file_count"></label>
+                                </p>
+                            </div>
+                            <div class="col-12" style="">
+                            </div>
+                        </div>
+                        <div class="col-12 fileimagecontent"> </div>
+                    </div>
+                </div>
+                <div class="col-6 mobil_teklifekle" style="text-align: left;">
+                    <div class="row">
+                        <div class="col-12 fileUploadTrigger2">
+                        </div>
+                        <div class="col-12" style="margin: auto;">
+                            <div class="col-12" style="padding: 5px;text-align: center;">
+
+                                <h4 class="lbl_teklifekle">
+                                    TEKLİF EKLE
+                                </h4>
+                                <p class="file_context" style="display: none;">
+                                    <label style="font-size: 13px; margin-bottom: 0px !important;">Eklenen Dosya Sayısı : </label><label class="file_count"></label>
+                                </p>
+                            </div>
+                            <div class="col-12" style="">
+                            </div>
+                        </div>
+                        <div class="col-12 fileimagecontent" style="text-align: center;"> </div>
+                    </div>
+                </div>
+                <div class="col-6" style="text-align: right;color: #00FEB5;">
+                    <button class="myButton">
+                        GÖNDER
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container main_container" style="display:none">
+            <div class="row cizgi_header">
+                <div class="col-6 img_logo">
+                </div>
+                <div class="col-6 lbl_header">
+                    <label>Acente Mesaj Paneli</label>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 4em;">
+                <div class="col-4" style="text-align: left;">
+                    <div class="row testdiv">
+                        <div class="col-12 lbl_baslik">
+                            Müşteri Bilgisi
+                        </div><div class="col-12 cizgi_musteri"></div>
+                        <div class="col-12 lbl_adsoyad">Ad Soyad:</div>
+                        <div class="col-12 username"></div>
+                    </div>
+                    <div class="row" style="margin-top: 55px;">
+                        <div class="col-12 lbl_baslik">
+                            Poliçe Bilgisi
+                        </div>
+                        <div class="cizgi_talepno"></div>
+
+                        <div class="cizgi_policeno"></div>
+                        <div class="cizgi_urun"></div>
+                        <div class="cizgi_urunaciklama"></div>
+                        <div class="col-12 lbl_talepno">Talep No:</div>
+                        <div class="col-12 talepno username"></div>
+
+                        <div class="col-12 lbl_police">Poliçe No:</div>
+                        <div class="col-12 policenumarasi username"></div>
+                        <div class="col-12 lbl_police">Ürün:</div>
+                        <div class="col-12 bransAdi username"></div>
+                        <div class="col-12 urun_tur lbl_police">Meslek</div>
+                        <div class="col-12 urun_aciklama username"></div>
+                    </div>
+
+
+                </div>
+                <div class="col-8" style="text-align: right;">
+                    <div class="col-12 user_message div_user_message" id="div_user_message" style="overflow-y: scroll;max-height: 450px;padding-bottom: 15px;height: 66%;margin: 5px;"> 
+                    </div><textarea name="message" class="textarea_message" placeholder="Mesajınızı yazınız" rows="3" style="height:30%;margin: 5px;"></textarea>
+                </div>
+            </div><div class="row" style="margin-top: 2em;">
+                <div class="col-12">
+
+                    <label style="font-size: 16px;color: white;">Maksimum 5 adet dosyayı aynı anda seçerek yükleyebilirsiniz.</label><label style="font-size: 16px; display: none; color: white;" id="lbl_reselect" class="lbl_reselect">Dosyaları yeniden seçmek için tekrar "Teklif Ekle" butonuna tıklayınız.</label>
+                </div>
+                <div class="col-6" style="text-align: left; margin: auto;">
+                    <div class="row">
+                        <div class="col-2 fileUploadTrigger3">
+                        </div>
+                        <div class="col-10" style=" margin: auto;">
+                            <div class="col-12" style=" padding: 0px;">
+
+                                <h4 class="lbl_teklifekle">
+                                    TEKLİF EKLE
+                                </h4>
+                                <p class="file_context">
+                                    <label style="font-size: 13px; margin-bottom: 0px !important;">Eklenen Dosya Sayısı : </label><label class="file_count"></label>
+                                </p>
+                            </div>
+                            <div class="col-12" style="">
+                            </div>
+                        </div>
+                        <div class="col-6 fileimagecontent" style="text-align: center;"></div>
+                    </div>
+                </div>
+                <div class="col-6" style="text-align: right;color: #00FEB5;">
+                    <button class="myButton">
+                        GÖNDER
+                    </button>
+                </div>
+            </div>
+        </div>
+        <input type="file" class="form-control input_customFile" id="customFile" multiple="" accept=".docx,.doc,.pdf,.xml,.bmp,.ppt,.pptx,.xls,.xlsx,.png,.jpg,.jpeg" style="display: none;">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+    <script type="text/javascript" async="" src="~/assets/css/analytics.js"></script>
+    <script src="~/assets/css/jquery-3.2.1.min.js"></script>
+    <script src="~/assets/css/popper.js"></script>
+    <script src="~/assets/css/bootstrap.min.js"></script>
+    <script src="~/assets/css/select2.min.js"></script>
+    <script src="~/assets/css/main.js"></script>
+    <script>
+        function messageBox(code) {
+            var messageText = "", messageType = "warning";
+            var widthAlert = "255px", heightAlert = "300px";
+            switch (code) {
+                case "filewarning":
+                    messageText = 'Lütfen geçerli formatta dosya seçiniz';
+
+                    break;
+                case "selectfilewarning":
+                    messageText = 'Maksimum dosya sınırı aştınız';
+                    break;
+                case "mesajwarning":
+                    messageText = "Mesajınızı yazınız!";
+                    break;
+                case "companywarning":
+                    messageText = 'Erişim engellendi.\nBu mesajlaşmanın süresi bitmiştir!';
+                    messageType = "error";
+                    widthAlert = "325px";
+                    heightAlert = "340px";
+                    break;
+                default:
+            }
+            Swal.fire(
+                messageText,
+                '',
+                messageType
+            );
+            $(".swal2-popup.swal2-modal").css("width", widthAlert)
+            $(".swal2-popup.swal2-modal").css("height", heightAlert)
+        }
+        function fnk_messageList(brasAdi) {
+
+            var template = ""
+            messageList.forEach(item => {
+                if (item.gonderici_Tip == "0") {
+                    template = '<div class="mymessageleftdiv"><div class="mymessagefont"><div class="mymessagelbl1">Müşteri :</div><div class="mymessagelbl2">' + item.tarih_Saat.substr(0, 16).replace('T', ' ') + '</div></div><div style="clear: both;"></div><p class="mymessagecontent">' + item.mesaj + '</p></div>';
+                    $(".div_user_message").append(template)
+                }
+                else {
+                    template = '<div class="mymessagerightdiv"><div class="mymessagefont"> <div class="mymessagelbl1">Siz :</div><div class="mymessagelbl2">' + item.tarih_Saat.substr(0, 16).replace('T', ' ') + '</div> </div><div style="clear: both;"></div> <p class="mymessagecontent">' + item.mesaj + '</p>  </div> '
+                    $(".div_user_message").append(template)
+                }
+            });
+            var temp = brasAdi == "Trafik" || brasAdi == "Kasko" ? "Plaka" : brasAdi == "Sağlık" ? "Meslek" : "İl/İlçe";
+            $(".urun_tur").html(temp)
+            var elmnt = document.getElementsByClassName("div_user_message");
+            var scrollHeight = 0;
+            for (var i = 0; i < elmnt.length; i++) {
+                scrollHeight = elmnt[i].scrollHeight;
+                elmnt[1].scrollTop = scrollHeight; //konusma alanı scroll en aşağı focuslar
+            }
+
+        }
+
+    </script>
+    <script type="text/javascript" src="~/assets/css/custom.js"></script>
+
+
+</body>
+
+</html>

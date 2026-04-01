@@ -1,0 +1,37 @@
+ 
+
+
+@media  screen and (min-width: 768px)  {
+		 
+		.ilk_bolum_sag
+		{
+			width: 300px !important;
+			 
+		}
+		.ilk_bolum_sol{
+			 width: 70px !important;
+		}
+	}
+	
+	@media  screen and (min-width: 768px)  {
+		 
+			.ilk_bolum_sag_img
+		{
+			width: 120% !important; 
+			height: 500px !important; 
+			margin-left: -30% !important; 
+			 
+		}
+		
+	}
+	 
+	 
+	 
+	  @media  screen and (min-width: 992px)  {
+		 
+			.div_iletisim
+		 {
+			  padding: 130px 170px 30px 170px !important;
+		 }
+		
+	}

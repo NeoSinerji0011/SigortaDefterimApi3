@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API</name>
+    </assembly>
+    <members>
+        <member name="T:API.Areas.MobilApi.Models.Input.AuthenticatorRequest">
+            <summary>
+            qrcode,text,secretqrcode(outpath a gidecek olan tür)
+            </summary>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.CarController.GetAracMarka">
+            <summary>
+             AracMarka tablosu üzerindeki tüm mevcut kayıtları döndürür.
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.CarController.GetAracTip(SigortaDefterimV2API.Models.Inputs.Car.GetAracTipInput)">
+            <summary>
+             AracTip tablosundan parametre olarak verilen MarkaKodu ile eşleşen tüm mevcut kayıtları döndürür
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.CarController.GetAracKullanimSekli">
+            <summary>
+            AracKullanimSekli tablosu üzerindeki tüm mevcut kayıtları döndürür.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.CarController.GetAracKullanimTarzi(SigortaDefterimV2API.Models.Inputs.Car.GetAracKullanimTarziInput)">
+            <summary>
+            AracKullanimTarzi tablosundan parametre olarak verilen KullanimSekliKodu ile eşleşen tüm kayıtları  döndürür
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.MobileAppController.GetLandingPages">
+            <summary>
+            Mobil uygulama başlangıcında kullanıcıya gösterilmek üzere aktif açılış aktif ekranlarını liste halinde döndürür.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.MobileAppController.GetSliderPages">
+            <summary>
+            Mobil uygulama içerisindeki ana menüde gösterilen aktif kaydırılabilen içerikleri liste halinde döndürür.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.MobileAppController.GetGlobalDataList(SigortaDefterimV2API.Models.Kullanici)">
+            <summary>
+            Seyahat Poliçesi ülke tip ve ülke isimleri listesi
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.MobileAppController.GetAracTipList(SigortaDefterimV2API.Models.Database.AracMarka)">
+            <summary>
+            Arac  tip verilerini getirir
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.MobileAppController.GetTVMDetay(API.Models.Database.TVMDetay)">
+            <summary>
+            Brans koduna göre detayı getirir
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.MobileAppController.GetBildirim(SigortaDefterimV2API.Models.Kullanici)">
+             <summary>
+            poliçe bildirim listesi
+             </summary>
+             <returns></returns> 
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.MobileAppController.SetBildirimDisable(API.Models.Database.Bildirim)">
+             <summary>
+            poliçenin bildirim sayfasındaki gorunurlugunu gizler
+             </summary>
+             <returns></returns> 
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.MobileAppController.SetUserMessage(API.Models.Database.MobilMessage)">
+             <summary>
+            kullanıcınn mesajını firmaya gönderir.
+             </summary>
+             <returns></returns> 
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.MobileAppController.GetUserMessage(SigortaDefterimV2API.Models.Kullanici)">
+             <summary>
+            kullanıcının bütün mesajlarını listeler.
+             </summary>
+             <returns></returns> 
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.MobileAppController.UserMessageCount(SigortaDefterimV2API.Models.Kullanici)">
+             <summary>
+            kullanıcıya gelen yeni mesaj sayısı.
+             </summary>
+             <returns></returns> 
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.MobileAppController.SetReadMessage(API.Models.Database.MobilMessage)">
+             <summary>
+            kullanıcının bütün mesajlarını listeler.
+             </summary>
+             <returns></returns> 
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.MobileAppController.GetUserNewMessage(SigortaDefterimV2API.Models.Kullanici)">
+             <summary>
+            kullanıcıya yeni gelen mesajlarını listeler.
+             </summary>
+             <returns></returns> 
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.MobileAppController.GetCompanyMessage">
+             <summary>
+            firmaya gelen mesajı gösterir.
+             </summary>
+             <returns></returns> 
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.MobileAppController.companyMessage">
+             <summary>
+            firma mesajını kullanıcıya gönderir.
+             </summary>
+             <returns></returns> 
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.PolicyController.GetPolicies(SigortaDefterimV2API.Models.Inputs.GetPoliciesInput)">
+            <summary>
+            İlgili TC Kimlik no ve branş koduyla eşleşen tüm MobilTeklifPolice kayıtlarını geriye liste halinde döndürür.
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.PolicyController.GetPolicy(SigortaDefterimV2API.Models.Inputs.GetPolicyInput)">
+            <summary>
+            Id'si parametre olarak verilen MobilTeklifPolice kaydını mevcut ise geriye döndürür,
+            bulunamaz ise 404 Not Found hatasını cevap olarak döndürür.
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.PolicyController.GetDamagePolicies(SigortaDefterimV2API.Models.Inputs.GetPoliciesInput)">
+            <summary>
+            İlgili TC Kimlik no ve branş koduyla eşleşen tüm MobilPoliceHasar kayıtlarını geriye liste halinde döndürür.
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.PolicyController.GetDamagePolicy(SigortaDefterimV2API.Models.Inputs.GetPolicyInput)">
+            <summary>
+            Id'si parametre olarak verilen MobilPoliceHasar kaydını mevcut ise geriye döndürür,
+            bulunamaz ise 404 Not Found hatasını cevap olarak döndürür.
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.PolicyController.AddDamagePolicy(API.Models.Inputs.Policy.DamagePolicyInput)">
+            <summary>
+             MobilPoliceHasar kaydıekler, 
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.PolicyController.AddRenewPolicy(API.Models.Inputs.Policy.MobilTeklifPoliceInput)">
+            <summary>
+             Police yenileme kaydı ekler, 
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.PolicyController.AddGetOfferPolicy(API.Models.Inputs.Policy.MobilTeklifPoliceInput)">
+            <summary>
+             teklif al  kaydı ekler, 
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.PolicyController.AddPolicy(API.Models.Inputs.Policy.MobilTeklifPoliceInput)">
+            <summary>
+             Manuel Poliçe kaydı ekler, 
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.PolicyController.selectDamageUrun(API.Models.Inputs.Policy.DamagePolicyInput)">
+            <summary>
+             0:yenileme, 1:hasar, 
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.PolicyController.selectPolicyUrun(API.Models.Inputs.Policy.MobilTeklifPoliceInput,System.Byte)">
+            <summary>
+             processType->2:yenileme işlemi(mail gönderim işlemi),0:teklif al işlemi(mail gönderim işlemi),1:poliçe ekleme, 
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.PolicyController.UpdateCarInfo(SigortaDefterimV2API.Models.Inputs.UpdateCarInfoInput)">
+            <summary>
+            Request Body ile gönderilen JSON data içerisinde Id'si eşleşen MobilTeklifPolice kaydının MarkaKodu, ModelYili, TipKodu ve AracKullanimTarzi alanlarını günceller.
+            Eğer eşleşen kayıt yoksa 404 Not Found hatası verir.
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.UserController.Login(SigortaDefterimV2API.Models.LoginInput)">
+            <summary>
+            Uygulamadan JSON Web Token almak için kullanılan Endpointtir.
+            Otorizasyon gerektiren diğer tüm istekler alınan JWT değeri "Authorization" headerında "Bearer {Token}" şeklinde yollanarak talep edilecektir.
+            Başarılı şekilde giriş yapan kullanıcının Email adresi JWT içerisinde mevcuttur.
+            </summary>
+            <param name="userData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.UserController.ResetPassword(System.String)">
+            <summary>
+            İlk etapta kullanıcının emailine şifre sıfırlama onay emaili yollar.
+            Kullanıcı bu emaildeki onay linkine tıklarsa kullanıcının şifresini rastgele bir şifreyle değiştirerek bu yeni şifreyi kullanıcıya e-posta olarak yollar.
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.UserController.RefreshToken(SigortaDefterimV2API.Models.Kullanici)">
+            <summary>
+            İlk etapta kullanıcının emailine şifre sıfırlama onay emaili yollar.
+            Kullanıcı bu emaildeki onay linkine tıklarsa kullanıcının şifresini rastgele bir şifreyle değiştirerek bu yeni şifreyi kullanıcıya e-posta olarak yollar.
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.UserController.Register(SigortaDefterimV2API.Models.Kullanici)">
+            <summary>
+            Yeni kullanıcı kaydı oluşturmak için kullanılan Endpointtir.
+            Kullanıcı kaydı başarılı bir şekilde oluşturulursa dönen cevaptaki JSON Objesinde ki statusCode 200 değerini alır.
+            Eğer email zaten mevcutsa 400 değerini alır.
+            Eğer Tc zaten mevcutsa 401 değerini alır.
+            </summary>
+            <param name="kullanici"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.UserController.GetAdSoyad(SigortaDefterimV2API.Models.Kullanici)">
+            <summary>
+            kimlik seçimine göre Tc ile  ad soyad getirme işlemi(mobil üye ol sayfası). 
+            </summary>
+            <param name="kullanici"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.UserController.UserUpdate(SigortaDefterimV2API.Models.Kullanici)">
+            <summary>
+            kullanıcı kaydı güncelleme fonksiyonu  
+            </summary>
+            <param name="kullanici"></param>
+            <returns></returns> 
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.UserController.SendFeedBack(API.Models.Responses.UserResponse)">
+            <summary>
+            geri dönüş mesaj işlemi  
+            </summary>
+            <param name="kullanici"></param>
+            <returns></returns> 
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.UserController.WebSiteContact">
+            <summary>
+            sigortadefterim.com iletişim metodu  
+            </summary>
+            <param name="kullanici"></param>
+            <returns></returns> 
+        </member>
+        <member name="M:SigortaDefterimV2API.Controllers.UserController.ConfirmResetPassword(System.String)">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Services.UtilityService.#ctor(System.Int32)">
+            <summary>
+             0:damageimage,1:sound,2:pdf,3:userimage 
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SigortaDefterimV2API.Services.UtilityService.createPdf(API.Models.Inputs.Policy.PdfPolicy,System.Byte)">
+            <summary>
+            0:teklif talebi,1:hasar bildirimi,2:Yenileme talebi
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

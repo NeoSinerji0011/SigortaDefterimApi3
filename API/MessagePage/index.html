@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>SİGORTADEFTERİM.com İletişim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="../assets/images/icon.png">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../assets//fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../assets//css/animate.css">
+
+    <link rel="stylesheet" type="text/css" href="../assets//css/hamburgers.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../assets//css/select2.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../assets//css/util.css">
+    <link rel="stylesheet" type="text/css" href="../assets//css/main.css">
+
+</head>
+<style>
+    .myrowStyle {
+        background-color: grey;
+        color: white;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <div class="bg-contact2" style="background-image: url('../assets/images/ikonlar-3.png');">
+        <div class="container-contact2">
+            <div class="wrap-contact2" style="display:none">
+                <form class="contact2-form validate-form">
+                    <div class="" style="padding-bottom: 50px;text-align: center;">
+                        <img src="../assets/images/logo1.png" class="classLogo" style="
+						border: 0px;
+						border-radius: 50px;
+						width: 500px;
+					">
+                    </div>
+                    <div class="row data1" style="background-color:#00feb5;border-radius: 10px;padding: 10px;">
+                        <div class="col-5 bilgi1">
+                            <label>Kullanıcı Bilgisi</label>
+                            <div class="row myrowStyle">
+                                <div class="col-6 ">Ad Soyad</div>
+                                <div class="col-6 username"></div>
+                            </div>
+                        </div>
+                        <div class="col-1 bilgi2">
+                        </div>
+                        <div class="col-6 bilgi3">
+                            <label>Poliçe Bilgisi</label>
+                            <div class="row myrowStyle">
+                                <div class="col-6">Poliçe Numarası</div>
+                                <div class="col-6 policenumarasi"></div>
+                            </div>
+                            <div style="margin-top: 5px;"> </div>
+                            <div class="row myrowStyle">
+                                <div class="col-6">Talep No</div>
+                                <div class="col-6 talepno"></div>
+                            </div>
+                            <div style="margin-top: 5px;"> </div>
+                            <div class="row myrowStyle">
+                                <div class="col-6">Branş Adı</div>
+                                <div class="col-6 bransAdi"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row data2" style="background-color:#00feb5;border-radius: 10px;padding: 10px;display: none;">
+                        <div class="col-12 ">
+                            <label>Kullanıcı Bilgisi</label>
+                            <div class="row myrowStyle">
+                                <div class="col-6">Ad Soyad</div>
+                                <div class="col-6 username"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 ">
+                            <label>Poliçe Bilgisi</label>
+                            <div class="row myrowStyle">
+                                <div class="col-6">Poliçe Numarası</div>
+                                <div class="col-6 policenumarasi">-</div>
+                            </div>
+                            <div style="margin-top: 5px;"> </div>
+                            <div class="row myrowStyle">
+                                <div class="col-6">Talep No</div>
+                                <div class="col-6 talepno">-</div>
+                            </div>
+                            <div style="margin-top: 5px;"> </div>
+                            <div class="row myrowStyle">
+                                <div class="col-6">Branş Adı</div>
+                                <div class="col-6 bransAdi">-</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 25px;"> </div>
+
+                    <label>Kullanıcı Mesajı</label>
+                    <div class="wrap-input2 nameinput">
+                        <textarea class="input2" name="message_user" readonly>Kullanıcıdan gönderilen mesaj </textarea>
+                    </div>
+
+                    <div class="wrap-input2 validate-input messageinput" data-validate="Mesajınızı giriniz">
+                        <textarea class="input2" name="message"></textarea>
+                        <span class="focus-input2" data-placeholder="Mesajınız"></span>
+                    </div>
+                    <div class="container-contact2-form-btn">
+                        <div class="wrap-contact2-form-btn">
+                            <div class="contact2-form-bgbtn"></div>
+                            <button type="button" class="contact2-form-btn myButton">
+                                GÖNDER
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src='https://cdn.jsdelivr.net/npm/sweetalert2@8'></script>
+
+    <script type="text/javascript" async="" src="../assets/css/analytics.js"></script>
+    <script src="../assets/css/jquery-3.2.1.min.js"></script>
+    <script src="../assets/css/popper.js"></script>
+    <script src="../assets/css/bootstrap.min.js"></script>
+    <script src="../assets/css/select2.min.js"></script>
+    <script src="../assets/css/main.js"></script>
+    <script src="../assets/css/custom.js"></script>
+
+    <script>
+        var myVar = setInterval(function () {
+            if (checkResult == 1) {
+                Swal.fire(
+                    'Erişim engellendi.\nBu Bağlantının süresi dolmuştur!',
+                    '',
+                    'success'
+                )
+                clearInterval(myVar);
+            }
+            else if (checkResult == 2) {
+                clearInterval(myVar);
+            }
+
+        }, 250);
+    </script>
+</body>
+
+</html>
